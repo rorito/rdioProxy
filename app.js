@@ -1,7 +1,7 @@
 var Hapi = require('hapi'),
     Rdio = require('./rdio')
 
-var server = new Hapi.Server(process.env.PORT || 5000);
+var server = new Hapi.Server(+process.env.PORT, '0.0.0.0');
 
 server.route({
   method: 'GET',
@@ -38,6 +38,7 @@ server.route({
   }
 });
 
-server.start(function() {
-  console.log('Server started on port:', server.info.port);
+server.start(function () {
+  server.settings.uri = process.env.HOST ? 'http://' + process.env.HOST + ':' + process.env.PORT : server.settings.uri;
+  console.log('Server started at ' + server.settings.uri);
 });

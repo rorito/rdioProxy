@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Call rdio API via node",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rorito/rdioProxy.git"
+  },
   "engines": {
     "node": "0.10.25"
   },
