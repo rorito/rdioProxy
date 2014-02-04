@@ -11,8 +11,7 @@
     "node": "0.10.25"
   },
   "dependencies": {
-    "hapi": "~1.20.0",
-    "yar": "~0.4.1"
+    "express": "3.4.8"
   },
   "devDependencies": {},
   "scripts": {
