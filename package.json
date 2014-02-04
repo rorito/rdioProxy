@@ -4,6 +4,7 @@
   "description": "Call rdio API via node",
   "main": "app.js",
   "dependencies": {
+    "node": "0.10.25",
     "hapi": "~1.20.0",
     "yar": "~0.4.1"
   },

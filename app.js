@@ -1,7 +1,7 @@
 var Hapi = require('hapi'),
     Rdio = require('./rdio')
 
-var server = new Hapi.Server(8080);
+var server = new Hapi.Server(process.env.PORT || 5000);
 
 server.route({
   method: 'GET',
